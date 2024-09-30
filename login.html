@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap"
+      rel="stylesheet"
+    />
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+
+    <title>Roomie || Login</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body class="form">
+    <nav>
+      <div class="nav-center">
+        <!-- nav header -->
+        <div class="nav-header">
+          <img src="Roomie-01.svg" class="logo" alt="Roomie logo" />
+          <button class="nav-toggle">
+            <i class="fa fa-bars"></i>
+          </button>
+        </div>
+        <div class="links">
+          <!-- links -->
+          <ul class="page-links">
+            <li>
+              <a href="index.html">Home</a>
+            </li>
+          </ul>
+          <ul class="auth-links">
+            <li>
+              <a href="register.html">Sign Up</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <form action="login.php" method="post" id="myForm" class="fill">
+      <h1>Your Login Details</h1>
+      <div id="form-group">
+        <label for="email">Email</label>
+        <input
+          type="email"
+          id="email"
+          name="email"
+          placeholder="Your Email here"
+        />
+        <p class="error" id="emailError"></p>
+      </div>
+
+      <div id="form-group">
+        <label for="password">Password</label>
+        <input
+          type="password"
+          id="password"
+          name="password"
+          placeholder="Your Password here"
+        />
+        <p class="error" id="passwordError"></p>
+      </div>
+
+      <input type="submit" value="Submit" id="submit" />
+    </form>
+
+    <div id="dark-modetoggle">
+      <i class="fas fa-moon"></i>
+    </div>
+
+    <footer>
+      <p>Coded By <a href="#">Afolayan Timileyin Israel</a></p>
+    </footer>
+
+    <script src="login.js"></script>
+  </body>
+</html>

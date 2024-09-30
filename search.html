@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Roomie || Search</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body class="move">
+    <nav>
+      <div class="nav-center">
+        <!-- nav header -->
+        <div class="nav-header">
+          <img src="Roomie-01.svg" class="logo" alt="Roomie Logo" />
+          <button class="nav-toggle">
+            <i class="fas fa-bars"></i>
+          </button>
+        </div>
+        <div class="links">
+          <!-- links -->
+          <ul class="page-links">
+            <li>
+              <a href="index.html">Home</a>
+            </li>
+            <li>
+              <a href="search.html" class="active">Search</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Search Container -->
+    <div class="search-container">
+      <h2>Find Your Roommates</h2>
+      <p>Enter your room number below to find your roommates</p>
+      <form id="search">
+        <div class="search-box">
+          <input
+            type="text"
+            id="room_number"
+            class="input-field"
+            placeholder="Enter room number"
+          />
+          <input type="submit" value="Search" class="search-btn" />
+        </div>
+      </form>
+
+      <div id="roommatesList" class="roommates-list"></div>
+    </div>
+
+    <div id="dark-modetoggle"></div>
+
+    <footer>
+      <p>&copy; Coded by <a href="#">Afolayan Timileyin</a></p>
+    </footer>
+
+    <script src="search.js"></script>
+  </body>
+</html>

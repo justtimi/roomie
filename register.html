@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap"
+      rel="stylesheet"
+    />
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+
+    <title>Roomie || Sign Up</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body class="form">
+    <nav>
+      <div class="nav-center">
+        <!-- nav header -->
+        <div class="nav-header">
+          <img src="Roomie-01.svg" class="logo" alt="Roomie logo" />
+          <button class="nav-toggle">
+            <i class="fa fa-bars"></i>
+          </button>
+        </div>
+        <div class="links">
+          <!-- links -->
+          <ul class="page-links">
+            <li>
+              <a href="index.html">Home</a>
+            </li>
+          </ul>
+          <ul class="auth-links">
+            <li>
+              <a href="login.html">Login</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <form action="register.php" method="post" id="myForm">
+      <h1>Time to know you</h1>
+      <div class="names">
+        <div id="form-group">
+          <label for="email">Email</label>
+          <input
+            type="email"
+            id="email"
+            name="email"
+            placeholder="Your Email here"
+            autocomplete="email"
+          />
+          <p class="error" id="emailError"></p>
+        </div>
+
+        <div id="form-group">
+          <label for="firstname">First Name</label>
+          <input
+            type="text"
+            id="firstname"
+            name="firstname"
+            placeholder="Your First Name here"
+          />
+          <p class="error" id="firstnameError"></p>
+        </div>
+
+        <div id="form-group">
+          <label for="surname">Surname</label>
+          <input
+            type="text"
+            id="surname"
+            name="surname"
+            placeholder="Your Surname here"
+          />
+          <p class="error" id="surnameError"></p>
+        </div>
+      </div>
+
+      <div class="names">
+        <div id="form-group">
+          <label for="room-number">Room Number</label>
+          <input
+            type="text"
+            id="room-number"
+            name="room-number"
+            placeholder="Your room number here"
+          />
+          <p class="error" id="room-numberError"></p>
+        </div>
+
+        <div id="form-group">
+          <label for="phone">WhatsApp Number</label>
+          <input
+            type="tel"
+            id="phone"
+            name="phone"
+            placeholder="Your WhatsApp number"
+            autocomplete="tel"
+          />
+
+          <p class="error" id="phoneError"></p>
+        </div>
+      </div>
+
+      <div class="names">
+        <div id="form-group" class="text-group">
+          <label for="qualities" class="span"
+            >Qualities and Characteristics</label
+          >
+          <textarea
+            id="qualities"
+            name="qualities"
+            placeholder="Write down what you want your roommates to know about you"
+          ></textarea>
+
+          <p class="error" id="qualitiesError"></p>
+        </div>
+
+        <div id="form-group" class="text-group">
+          <label for="interests" class="span">Interests</label>
+          <textarea
+            id="interests"
+            name="interests"
+            placeholder="Write down what you enjoy doing"
+          ></textarea>
+
+          <p class="error" id="interestsError"></p>
+        </div>
+      </div>
+
+      <div id="form-group" class="profile-picture">
+        <label for="profile-picture">Choose a profile picture</label>
+        <input
+          type="file"
+          name="picture"
+          name="profile-picture"
+          id="profile-picture"
+          accept="image/*"
+        />
+        <p class="error" id="profile-pictureError"></p>
+      </div>
+
+      <div class="names">
+        <div id="form-group">
+          <label for="password">Password</label>
+          <input
+            type="password"
+            id="password"
+            name="password"
+            placeholder="Your Password here"
+          />
+          <p class="error" id="passwordError"></p>
+        </div>
+
+        <div id="form-group">
+          <label for="confirm-password">Confirm Password</label>
+          <input
+            type="password"
+            id="confirm-password"
+            name="confirm-password"
+            placeholder="Rewrite Password here"
+          />
+
+          <p class="error" id="confirm-passwordError"></p>
+        </div>
+      </div>
+      <input type="submit" value="Submit" id="submit" />
+    </form>
+    <div id="registrationMessage"></div>
+
+    <div id="dark-modetoggle">
+      <i class="fas fa-moon"></i>
+    </div>
+
+    <footer>
+      <p>Coded By <a href="#">Afolayan Timileyin Israel</a></p>
+    </footer>
+
+    <script src="register.js"></script>
+  </body>
+</html>
