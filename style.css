@@ -53,6 +53,7 @@ nav {
   position: fixed;
   background: var(--primary-color);
   transition: var(--transition);
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
 }
 .nav-header {
   display: flex;
@@ -148,6 +149,11 @@ nav {
   text-decoration: none;
   border-radius: 10px;
   font-weight: bold;
+}
+
+#banner .cta-container a:hover {
+  background: var(--accent-color);
+  box-shadow: 0px 32px 42px rgba(0, 0, 0, 0.1);
 }
 
 .content {
@@ -268,12 +274,14 @@ input[type="submit"] {
 
 input[type="submit"]:hover {
   background: var(--accent-color);
+  box-shadow: 0px 16px 32px rgba(0, 0, 0, 0.1);
 }
 
 #dark-modetoggle {
   width: 50px;
   height: 50px;
-  background-color: var(--primary-color);
+  background-color: var(--neutral-color-2);
+  color: var(--neutral-color-1);
   border-radius: 50%;
   position: fixed;
   top: 88%;
@@ -287,6 +295,10 @@ input[type="submit"]:hover {
   transition: var(--transition);
 }
 
+#dark-modetoggle:hover {
+  color: var(--accent-color);
+}
+
 footer {
   font-size: 0.85rem;
   text-align: center;
@@ -295,10 +307,6 @@ footer {
 footer a {
   transition: var(--transition);
   color: var(--accent-color);
-}
-
-.active {
-  color: red;
 }
 
 .search-container {
@@ -337,7 +345,6 @@ footer a {
 
 .search-btn {
   padding: 10px 20px;
-  background-color: #4caf50;
   color: #fff;
   border: none;
   border-radius: 4px;
@@ -345,9 +352,6 @@ footer a {
   transition: background-color 0.3s ease;
 }
 
-.search-btn:hover {
-  background-color: #388e3c;
-}
 .move {
   display: flex;
   flex-direction: column;
@@ -358,11 +362,31 @@ footer a {
 /* Roommates list */
 .roommates-list {
   margin-top: 20px;
-  text-align: left;
+  text-align: center;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+
+.roommate-card {
+  background: var(--neutral-color-1);
+  color: var(--neutral-color-2);
+  padding: 16px;
+  margin: 16px;
+  border-radius: 16px;
+  box-shadow: 0 16px 12px -1px rgba(0, 0, 0, 0.1);
+}
+
+.roommate-card img {
+  height: 40px;
+  object-fit: cover;
+  border-radius: 50%;
+  margin: 4px;
 }
 
 .roommates-list p {
-  background-color: #f1f1f1;
   padding: 10px;
   border-radius: 4px;
   margin: 5px 0;
@@ -370,6 +394,10 @@ footer a {
 
 #cta .title {
   margin-bottom: 32px;
+}
+
+#cta {
+  text-align: center;
 }
 
 #cta #now {
@@ -381,6 +409,24 @@ footer a {
   text-decoration: none;
   border-radius: 10px;
   font-weight: bold;
+}
+
+#cta #now:hover {
+  background: var(--accent-color);
+  box-shadow: 0px 32px 42px rgba(0, 0, 0, 0.1);
+}
+
+@media (max-width: 535px) {
+  .names {
+    flex-direction: column;
+  }
+
+  #dark-modetoggle {
+    left: 85vw;
+  }
+  .search-container {
+    width: 100%;
+  }
 }
 
 @media screen and (min-width: 800px) {
