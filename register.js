@@ -102,7 +102,7 @@ function handleRegistration(event) {
     formData.append("confirm_password", confirmPassword);
 
     // Send data to the backend using Fetch API
-    fetch("register.php", {
+    fetch("http://roomie.infinityfreeapp.com/register.php", {
         method: "POST",
         body: formData,
     })
