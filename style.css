@@ -427,6 +427,9 @@ footer a {
   .search-container {
     width: 100%;
   }
+  .fill {
+    width: 90%;
+  }
 }
 
 @media screen and (min-width: 800px) {
