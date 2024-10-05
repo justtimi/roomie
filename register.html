@@ -45,7 +45,12 @@
       </div>
     </nav>
 
-    <form action="register.php" method="post" id="myForm">
+    <form
+      action="register.php"
+      method="post"
+      id="myForm"
+      enctype="multipart/form-data"
+    >
       <h1>Time to know you</h1>
       <div class="names">
         <div id="form-group">
@@ -65,9 +70,10 @@
           <input
             type="text"
             id="firstname"
-            name="firstname"
+            name="first_name"
             placeholder="Your First Name here"
           />
+
           <p class="error" id="firstnameError"></p>
         </div>
 
@@ -139,11 +145,11 @@
         <label for="profile-picture">Choose a profile picture</label>
         <input
           type="file"
-          name="picture"
           name="profile-picture"
           id="profile-picture"
           accept="image/*"
         />
+
         <p class="error" id="profile-pictureError"></p>
       </div>
 
@@ -173,6 +179,7 @@
       </div>
       <input type="submit" value="Submit" id="submit" />
     </form>
+
     <div id="registrationMessage"></div>
 
     <div id="dark-modetoggle">
