@@ -14,7 +14,7 @@ document.getElementById("search").addEventListener("submit", function (e) {
   e.preventDefault();
   const roomNumber = document.getElementById("room_number").value;
 
-  fetch("find_roommates.php", {
+  fetch("https://roomie.infinityfreeapp.com/find_roommates.php", {
     method: "POST",
     headers: { "Content-Type": "application/x-www-form-urlencoded" },
     body: `room_number=${encodeURIComponent(roomNumber)}`,
