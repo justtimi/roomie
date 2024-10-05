@@ -427,7 +427,10 @@ footer a {
   .search-container {
     width: 100%;
   }
-  .fill {
+}
+
+@media (max-width: 370px) {
+  .fil {
     width: 90%;
   }
 }
