@@ -431,8 +431,8 @@ footer a {
   }
 }
 
-@media (max-width: 370px) {
-  .fil {
+@media (max-width: 600px) {
+  .fill {
     width: 90%;
   }
 }
