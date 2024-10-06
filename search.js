@@ -17,6 +17,7 @@ document.getElementById("search").addEventListener("submit", function (e) {
   fetch("https://roomie.infinityfreeapp.com/find_roommates.php", {
     method: "POST",
     headers: { "Content-Type": "application/x-www-form-urlencoded" },
+    mode: 'no-cors',
     body: `room_number=${encodeURIComponent(roomNumber)}`,
   })
     .then((response) => response.json())
